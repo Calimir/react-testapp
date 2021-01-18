@@ -1,3 +1,4 @@
+import './Songlist.css';
 import React from 'react';
 import Database from '../../database/songlist/Database.js';
 import Songlistrow from './Songlistrow.js';
@@ -15,7 +16,7 @@ class Songlist extends React.Component {
 	render() {
 		return (
 			<div>
-				<table>
+				<table class="songlistTable">
 					<thead>
 						<tr>
 							<th>Title</th>

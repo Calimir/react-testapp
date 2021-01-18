@@ -1,23 +1,23 @@
 const Database = [
     {
         id: 0,
-        title: "1",
-        artist: "1",
-        genre: "1",
+        title: "Fluiten hoort er bij",
+        artist: "Flip en de fluitketels",
+        genre: "Herrie",
         rating: "1"
     },
     {
         id: 1,
-        title: "2",
-        artist: "2",
-        genre: "2",
+        title: "PFFFFFFFFFFFFF",
+        artist: "James en de blazers",
+        genre: "Rare geluiden",
         rating: "2"
     },
     {
         id: 2,
-        title: "3",
-        artist: "3",
-        genre: "3",
+        title: "Who let the dogs out",
+        artist: "Flynn",
+        genre: "Hondenherrie",
         rating: "3"
     }];
 

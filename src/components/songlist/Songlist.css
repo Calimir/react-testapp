@@ -1,0 +1,13 @@
+/* Tekstkleur #CAF0F8 */
+/* AChtergrond kleur #03045e */
+
+body {
+	background-color: #03045e;
+	color: #CAF0F8;
+}
+
+.songlistTable {
+	background-color: #023e8a;
+	margin: 0 auto;
+	min-width: 50%;
+}
