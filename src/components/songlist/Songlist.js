@@ -1,5 +1,5 @@
 import React from 'react';
-import Database from '../database/Database.js';
+import Database from '../../database/songlist/Database.js';
 import Songlistrow from './Songlistrow.js';
 
 class Songlist extends React.Component {

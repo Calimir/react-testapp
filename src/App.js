@@ -1,6 +1,6 @@
 import './App.css';
-import Songform from './components/SongForm';
-import Songlist from './components/Songlist';
+import Songform from './components/songlist/SongForm';
+import Songlist from './components/songlist/Songlist';
 
 function App() {
   return (

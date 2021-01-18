@@ -9,7 +9,9 @@ class Songlistrow extends React.Component {
 				<td>{this.props.song.artist}</td>
 				<td>{this.props.song.genre}</td>
 				<td>{this.props.song.rating}</td>
-				<td></td>
+				<td>
+					<button>Delete</button>
+				</td>
 			</tr>
 		);
 	}
