@@ -1,14 +1,47 @@
+import React from "react";
+import {
+    BrowserRouter as Router,
+
+
+    Link, Route, Switch
+} from "react-router-dom";
 import './App.css';
-import Songform from './components/songlist/SongForm';
-import Songlist from './components/songlist/Songlist';
+import Songpage from "./pages/Songpage";
+import Homepage from "./pages/Homepage";
+import Aboutpage from "./pages/Aboutpage";
 
 function App() {
-  return (
-    <div className="App">
-          <Songform />
-          <Songlist />
-    </div>
-  );
+    return (
+        <Router>
+            <div>
+                <nav>
+                    <ul>
+                        <li>
+                            <Link to="/">Home</Link>
+                        </li>
+                        <li>
+                            <Link to="/about">About</Link>
+                        </li>
+                        <li>
+                            <Link to="/songlist">Songlist</Link>
+                        </li>
+                    </ul>
+                </nav>
+
+                <Switch>
+                    <Route path="/about">
+                        <Aboutpage />
+                    </Route>
+                    <Route path="/songlist">
+                        <Songpage />
+                    </Route>
+                    <Route path="/">
+                        <Homepage />
+                    </Route>
+                </Switch>
+            </div>
+        </Router>
+    );
 }
 
 export default App;
