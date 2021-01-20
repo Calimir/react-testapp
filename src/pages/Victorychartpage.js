@@ -1,4 +1,4 @@
-import { VictoryAxis, VictoryBar, VictoryChart, VictoryGroup, VictoryStack, VictoryTheme } from 'victory';
+import { VictoryAxis, VictoryBar, VictoryChart, VictoryGroup, VictoryTheme } from 'victory';
 import '../CSS/victorychart.css';
 
 const data = [
@@ -54,8 +54,6 @@ function Victorychartpage() {
                     domainPadding={20}>
 
                     <VictoryGroup offset={20}>
-
-                        
                             <VictoryBar
                                 style={{ data: { fill: "#e76f51" } }}
                                 data={data2}
@@ -69,48 +67,10 @@ function Victorychartpage() {
                                 x="naam"
                                 y="moeilijk"
                             />
-                        
                     </VictoryGroup>
                 </VictoryChart>
             </div>
         </div>);
 }
-
-
-//<VictoryStack>
-//    <VictoryBar
-//        style={{ data: { fill: "#e76f51" } }}
-//        data={data2}
-//        x="naam"
-//        y="leuk"
-//    />
-//</VictoryStack>
-
-//<VictoryBar
-//    style={{ data: { fill: "#264653" } }}
-//    data={data2}
-//    x="naam"
-//    y="moeilijk"
-///>
-
-//    <VictoryChart domainPadding={{ x: 50 }} width={400} height={400}>
-//        <VictoryGroup offset={20} style={{ data: { width: 15 } }}>
-//            <VictoryStack colorScale={"red"}>
-//                {getBarData().map((data, index) => {
-//                    return <VictoryBar key={index} data={data} />;
-//                })}
-//            </VictoryStack>
-//            <VictoryStack colorScale={"green"}>
-//                {getBarData().map((data, index) => {
-//                    return <VictoryBar key={index} data={data} />;
-//                })}
-//            </VictoryStack>
-//            <VictoryStack colorScale={"blue"}>
-//                {getBarData().map((data, index) => {
-//                    return <VictoryBar key={index} data={data} />;
-//                })}
-//            </VictoryStack>
-//        </VictoryGroup>
-//    </VictoryChart>
 
 export default Victorychartpage;
