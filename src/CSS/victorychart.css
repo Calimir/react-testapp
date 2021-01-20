@@ -1,0 +1,9 @@
+.victoryContainer {
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.victoryContainer h2 { 
+    text-align: center;
+}

@@ -6,9 +6,10 @@ import {
     Link, Route, Switch
 } from "react-router-dom";
 import './App.css';
-import Songpage from "./pages/Songpage";
-import Homepage from "./pages/Homepage";
 import Aboutpage from "./pages/Aboutpage";
+import Homepage from "./pages/Homepage";
+import Songpage from "./pages/Songpage";
+import Victorychartpage from "./pages/Victorychartpage";
 
 function App() {
     return (
@@ -25,6 +26,9 @@ function App() {
                         <li>
                             <Link to="/songlist">Songlist</Link>
                         </li>
+                        <li>
+                            <Link to="/victorychart">Victory chart</Link>
+                        </li>
                     </ul>
                 </nav>
 
@@ -34,6 +38,9 @@ function App() {
                     </Route>
                     <Route path="/songlist">
                         <Songpage />
+                    </Route>
+                    <Route path="/victorychart">
+                        <Victorychartpage />
                     </Route>
                     <Route path="/">
                         <Homepage />
