@@ -1,24 +1,23 @@
+import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
+import "../CSS/navigation.css";
 import Homepage from "./Homepage";
 import Songpage from "./Songpage";
 import Victorychartpage from "./Victorychartpage";
-import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 
 function Navigation() {
     return (
         <Router>
-            <div>
+            <div className="wrapper">
                 <nav>
-                    <ul>
-                        <li>
-                            <Link to="/">Home</Link>
-                        </li>
-                        <li>
-                            <Link to="/songlist">Songlist</Link>
-                        </li>
-                        <li>
-                            <Link to="/victorychart">Victory chart</Link>
-                        </li>
-                    </ul>
+                    <div className="navItem">
+                        <Link to="/">Home</Link>
+                    </div>
+                    <div className="navItem">
+                        <Link to="/songlist">Songlist</Link>
+                    </div>
+                    <div className="navItem">
+                        <Link to="/victorychart">Victory chart</Link>
+                    </div>
                 </nav>
 
                 <Switch>
